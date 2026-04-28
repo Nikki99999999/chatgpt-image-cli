@@ -1,0 +1,43 @@
+{
+  "name": "chatgpt-image-cli",
+  "version": "0.1.0",
+  "description": "Generate images with ChatGPT Image 2.0 from your terminal — uses your existing ChatGPT Plus/Max membership via browser automation. No API key needed. Best Chinese text rendering.",
+  "keywords": [
+    "chatgpt",
+    "image-generation",
+    "gpt-image-2",
+    "browser-automation",
+    "cdp",
+    "ai",
+    "cli"
+  ],
+  "type": "module",
+  "main": "lib/driver.mjs",
+  "bin": {
+    "chatgpt-image": "bin/chatgpt-image.mjs",
+    "chatgpt-image-setup": "bin/setup.mjs"
+  },
+  "scripts": {
+    "setup": "node bin/setup.mjs",
+    "test": "node bin/chatgpt-image.mjs --prompt \"a red circle on white\" --output test.jpg"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "author": "Nikki99999999",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikki99999999/chatgpt-image-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nikki99999999/chatgpt-image-cli/issues"
+  },
+  "homepage": "https://github.com/Nikki99999999/chatgpt-image-cli#readme"
+}
